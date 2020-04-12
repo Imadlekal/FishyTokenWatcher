@@ -8,6 +8,10 @@ namespace FishyTokenWatcher
         {
             InitializeComponent();
 
+            numericUpDownSeconds.Maximum = int.MaxValue;
+            numericUpDownSeconds.Minimum = 1;
+            numericUpDownSeconds.DecimalPlaces = 0;
+
             this.Load += Configuration_Load;
         }
 
